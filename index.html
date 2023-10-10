@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h3>Hi, I'm</h3>
+        <h1>Jesse.<span class="flashing">_</span></h1>
+        <p>Artist and Developer</p><br>
+
+        <ul>
+            <li><a href="#" onclick="document.getElementById('content').innerHTML = projects;">Projects</a></li>
+            <li><a href="#" onclick="document.getElementById('content').innerHTML = about;">About Me</a></li>
+            <li><a href="#" onclick="document.getElementById('content').innerHTML = contact;">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="window">
+        <div class="window-header">
+            <button>_</button>
+            <button>&#9633;</button>
+            <button style="background: #ff3f3f; color: #fff;">X</button>
+        </div>
+        <div class="window-content" id="content">
+            Click something on the right...
+        </div>
+    </div>
+</body>
+</html>
