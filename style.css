@@ -52,6 +52,7 @@ button:hover {
 }
 .window-content {
     padding: 30px;
+    overflow-y: scroll;
 }
 
 @keyframes flash {
@@ -60,6 +61,7 @@ button:hover {
 @-webkit-keyframes flash {
     to { visibility: hidden; }
 }
+
 .flashing {
     animation: flash 1s steps(5, start) infinite;
     -webkit-animation: flash 1s steps(5, start) infinite;
