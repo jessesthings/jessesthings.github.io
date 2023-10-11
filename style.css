@@ -58,11 +58,17 @@ button:hover {
 @keyframes flash {
     to { visibility: hidden; }
 }
-@-webkit-keyframes flash {
-    to { visibility: hidden; }
+.flashing {
+    animation: flash 1s steps(2, start) infinite;
 }
 
-.flashing {
-    animation: flash 1s steps(5, start) infinite;
-    -webkit-animation: flash 1s steps(5, start) infinite;
+@keyframes hover {
+    0% { transform: translateY(5px); }
+    25% { transform: translateY(2px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(3px); }
+    100% { transform: translateY(5px); }
+}
+.hovering {
+    animation: hover 5s steps(40, start) infinite;
 }

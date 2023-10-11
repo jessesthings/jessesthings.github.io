@@ -13,7 +13,7 @@ const about = `
     <li>Web Development</li>
     <li>Unity Game Development</li>
     <li>Traditional Art</li>
-    <li>Co-president of <a href="https://timewinder.github.io/">Timewinder Club</a> (game dev club)</li>
+    <li>Co-president of <a href="https://timewinder.github.io/">Timewinder</a> (game dev club)</li>
 </ul>
 `;
 
@@ -24,3 +24,9 @@ const contact = `
     <li><a href="https://github.com/BlueberryTech123">Github</a></li>
 </ul>
 `;
+
+function changeWindow(content) {
+    let _content = document.querySelector("#content");
+
+    _content.innerHTML = content;
+}
