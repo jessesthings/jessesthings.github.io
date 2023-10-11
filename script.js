@@ -25,8 +25,17 @@ const contact = `
 </ul>
 `;
 
+addEventListener("error", (event, source, lineno, colno, error) => {
+    alert(event);
+})
+
 function changeWindow(content) {
     let _content = document.querySelector("#content");
 
     _content.innerHTML = content;
+}
+
+function toggleTheme() {
+    document.body.classList.toggle("light");
+    document.body.classList.toggle("dark");
 }

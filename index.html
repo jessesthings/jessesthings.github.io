@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <div id="container">
+<body class="light">
+    <div id="container" class="bordered">
         <h3>Hi, I'm</h3>
         <h1>Jesse.<span class="flashing">_</span></h1>
-        <p>Artist and Developer</p><br>
+        <p>Artist and Developer</p>
+        <a href="#" onclick="toggleTheme()">■ LIGHT / DARK theme</a><br><br>
 
         <ul>
             <li><a href="#" onclick="changeWindow(projects)">Projects</a></li>
@@ -21,7 +22,7 @@
         </ul>
     </div>
 
-    <div id="window">
+    <div id="window" class="bordered">
         <div class="window-header">
             <button>_</button>
             <button>&#9633;</button>
