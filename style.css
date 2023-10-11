@@ -76,6 +76,8 @@ button:hover {
 .window-content {
     padding: 30px;
     overflow-y: scroll;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
 }
 
 @keyframes flash {
