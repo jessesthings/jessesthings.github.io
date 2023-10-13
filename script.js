@@ -1,8 +1,9 @@
 const projects = `
 <h1>Projects</h1>
 <ul>
-    <li><a href="https://blueberrytech123.github.io/pbgs">Punch Bad Guys Simulator</a> (2022 Leland Hacks)</li>
+    <li><a href="https://blueberrytech123.github.io/pbgs">Punch Bad Guys Simulator</a></li>
     <li><a href="https://timewinder.github.io/">Timewinder Website</a></li>
+    <li><a href="https://jamboxweb.web.app">JamBox beta</a><br>Listen to radios from around the world! Currently in beta.</li>
 </ul>
 `;
 
@@ -12,7 +13,7 @@ const about = `
     <li>An Art and CompSci student at Gunn High School</li>
     <li>Web Development</li>
     <li>Unity Game Development</li>
-    <li>Art (mostly traditional)</li>
+    <li>Traditional Art</li>
     <li>Co-president of <a href="https://timewinder.github.io/">Timewinder</a> (game dev club)</li>
 </ul>
 `;
