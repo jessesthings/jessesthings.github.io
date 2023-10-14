@@ -81,6 +81,9 @@ button:hover {
     text-align: right;
     padding: 0px;
 }
+.dark .window-header {
+    background: #928eff;
+}
 .window-header button {
     width: 35px;
     height: 35px;
