@@ -3,7 +3,7 @@ const projects = `
 <ul>
     <li><a href="https://blueberrytech123.github.io/pbgs">Punch Bad Guys Simulator</a></li>
     <li><a href="https://timewinder.github.io/">Timewinder Website</a></li>
-    <li><a href="https://jamboxweb.web.app">JamBox beta</a><br>Listen to radios from around the world! Currently in beta.</li>
+    <li><a href="https://jambox.onrender.com">JamBox beta</a><br>Listen to radios from around the world! Currently in beta.</li>
 </ul>
 `;
 
