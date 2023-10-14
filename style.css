@@ -76,12 +76,6 @@ button:hover {
     height: 500px;
     overflow: hidden;
 }
-.light #window {
-    background: #fff;
-}
-.dark #window {
-    background: #333;
-}
 .window-header {
     background: #5550d3;
     text-align: right;
