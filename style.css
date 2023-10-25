@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
 @keyframes move-bg {
-    0% { background-position: 0px 0px; }
-    25% { background-position: 100px 100px; }
-    50% { background-position: 200px 200px; }
-    75% { background-position: 300px 300px; }
+    0% { background-position: 0px -30vh; }
+    100% { background-position: 0px 130vh; }
 }
 body {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-    animation: move-bg 0.2s steps(4, start) infinite;
+    /* background-repeat: no-repeat; */
+    background-size: 500px;
+    animation: move-bg 0.5s steps(40, start) infinite;
     height: 100vh;
     margin: 0px;
     font-family: "Pixelify Sans";
@@ -16,11 +16,11 @@ body {
     transition: 180ms;
 }
 .light {
-    backdrop-filter: contrast(20%) brightness(200%);
+    backdrop-filter: contrast(40%) brightness(200%);
     color: #444;
 }
 .dark {
-    backdrop-filter: contrast(20%) brightness(30%);
+    backdrop-filter: contrast(40%) brightness(30%);
     color: #fff;
 }
 
