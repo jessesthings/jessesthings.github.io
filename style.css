@@ -1,32 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
 
 @keyframes move-bg {
-    0% { background-position: 0px -30vh; }
-    100% { background-position: 0px 130vh; }
+    from { background-position: 0px 0vh; }
+    to { background-position: 0px 100vh; }
 }
 body {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    background-image: url("background.png");
     /* background-repeat: no-repeat; */
     background-size: 500px;
-    animation: move-bg 0.5s steps(40, start) infinite;
+    animation: move-bg 0.7s steps(40, start) infinite;
     height: 100vh;
     margin: 0px;
     font-family: "Pixelify Sans";
     line-height: 2em;
     transition: 180ms;
+
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
 }
 .light {
-    backdrop-filter: contrast(40%) brightness(200%);
+    /* backdrop-filter: contrast(40%) brightness(150%); */
     color: #444;
 }
 .dark {
-    backdrop-filter: contrast(40%) brightness(30%);
+    backdrop-filter: brightness(20%);
     color: #fff;
+}
+
+@keyframes a-hover {
+    0% { text-decoration: dashed underline; transform: scaleY(200%); filter: blur(5px); }
+    25% { text-decoration: dotted underline; }
+    50% { text-decoration: solid underline; transform: scaleY(100%); }
+    75% { text-decoration: double underline; }
+    100% { text-decoration: wavy underline; }
+}
+a {
+    transition: 180ms;
+}
+a:hover {
+    animation: a-hover 0.3s linear;
+    text-decoration: wavy underline;
+    display: inline-block;
+    transform: scale(110%);
 }
 
 .light a {
     color: #666;
-    transition: 180ms;
 }
 .light a:hover {
     color: #fff;
@@ -35,7 +59,6 @@ body {
 
 .dark a {
     color: #fff;
-    transition: 180ms;
 }
 .dark a:hover {
     color: #666;
@@ -46,6 +69,8 @@ button {
     transition: 180ms;
     background: rgba(200, 200, 200, 0.5);
     border: none;
+    font-family: "Pixelify Sans";
+    border: 2px outset #666;
 }
 button:hover {
     cursor: pointer;
@@ -58,7 +83,11 @@ button:hover {
 .dark .bordered {
     border: 2px solid #fff;
 }
-
+.icon {
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+}
 #container {
     margin: 25px;
     padding: 69px;
@@ -78,8 +107,9 @@ button:hover {
 }
 .window-header {
     background: #5550d3;
+    border: 2px outset #807ce4;
     text-align: right;
-    padding: 0px;
+    padding: 2px;
 }
 .dark .window-header {
     background: #928eff;
@@ -100,10 +130,12 @@ button:hover {
 }
 
 @keyframes flash {
-    to { visibility: hidden; }
+    0% { color: inherit; }
+    50% { color: inherit; }
+    100% { color: transparent; }
 }
 .flashing {
-    animation: flash 1s steps(2, start) infinite;
+    animation: flash 0.5s steps(50, start) infinite;
 }
 
 @keyframes hover {

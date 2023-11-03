@@ -1,4 +1,5 @@
 const projects = `
+<img src="projects.png" class="icon">
 <h1>Projects</h1>
 <ul>
     <li><a href="https://blueberrytech123.github.io/pbgs">Punch Bad Guys Simulator</a></li>
@@ -8,6 +9,7 @@ const projects = `
 `;
 
 const about = `
+<img src="about.png" class="icon">
 <h1>About Me</h1>
 <ul>
     <li>An Art and CompSci student at Gunn High School</li>
@@ -19,6 +21,7 @@ const about = `
 `;
 
 const contact = `
+<img src="contact.png" class="icon">
 <h1>Contact</h1>
 <ul>
     <li><a href="mailto:blueberry21007@gmail.com">blueberry21007@gmail.com</a></li>
