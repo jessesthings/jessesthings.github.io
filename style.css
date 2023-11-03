@@ -72,6 +72,9 @@ button {
     font-family: "Pixelify Sans";
     border: 2px outset #666;
 }
+.dark button {
+    border: 2px outset #888;
+}
 button:hover {
     cursor: pointer;
     filter: brightness(150%);
@@ -104,6 +107,7 @@ button:hover {
     width: 500px;
     height: 500px;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
 }
 .window-header {
     background: #5550d3;
@@ -112,7 +116,8 @@ button:hover {
     padding: 2px;
 }
 .dark .window-header {
-    background: #928eff;
+    background: #807ce4;
+    border: 2px outset #5550d3;
 }
 .window-header button {
     width: 35px;
