@@ -2,13 +2,13 @@
 
 @keyframes move-bg {
     from { background-position: 0px 0vh; }
-    to { background-position: 0px 100vh; }
+    to { background-position: 0px 500px; }
 }
 body {
-    background-image: url("background.png");
+    background-image: url("https://media4.giphy.com/avatars/anarketingpublicidad/CSDcGQoINXdw.gif");
     /* background-repeat: no-repeat; */
     background-size: 500px;
-    animation: move-bg 0.7s steps(40, start) infinite;
+    /* animation: move-bg 0.5s steps(40, start) infinite; */
     height: 100vh;
     margin: 0px;
     font-family: "Pixelify Sans";
@@ -24,11 +24,11 @@ body {
     -ms-interpolation-mode: nearest-neighbor;
 }
 .light {
-    /* backdrop-filter: contrast(40%) brightness(150%); */
+    backdrop-filter: contrast(40%) brightness(285%);
     color: #444;
 }
 .dark {
-    backdrop-filter: brightness(20%);
+    backdrop-filter: contrast(70%) brightness(30%);
     color: #fff;
 }
 
@@ -71,6 +71,7 @@ button {
     border: none;
     font-family: "Pixelify Sans";
     border: 2px outset #666;
+    padding: 10px;
 }
 .dark button {
     border: 2px outset #888;
@@ -78,6 +79,11 @@ button {
 button:hover {
     cursor: pointer;
     filter: brightness(150%);
+}
+
+input {
+    padding: 10px;
+    font-family: "Pixelify Sans";
 }
 
 .light .bordered {
@@ -111,8 +117,8 @@ button:hover {
 }
 .window-header {
     background: #5550d3;
+    color: #fff;
     border: 2px outset #807ce4;
-    text-align: right;
     padding: 2px;
 }
 .dark .window-header {
@@ -122,6 +128,13 @@ button:hover {
 .window-header button {
     width: 35px;
     height: 35px;
+    padding: initial;
+}
+.window-header div {
+    width: 49.5%;
+    display: inline-block;
+    box-sizing: border-box;
+    /* background: #ff0; */
 }
 .window-content {
     padding: 30px;
