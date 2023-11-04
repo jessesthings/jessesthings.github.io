@@ -28,7 +28,7 @@ body {
     color: #444;
 }
 .dark {
-    backdrop-filter: contrast(70%) brightness(30%);
+    backdrop-filter: contrast(20%) brightness(30%);
     color: #fff;
 }
 
