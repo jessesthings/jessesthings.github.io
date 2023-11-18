@@ -105,8 +105,8 @@ input {
     vertical-align: middle;
 }
 #background-filter {
-    width: 200vw;
-    height: 200vh;
+    width: 500vw;
+    height: 500vh;
     margin: -50%;
     position: fixed;
     background: transparent;
