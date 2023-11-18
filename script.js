@@ -2,9 +2,10 @@ const projects = `
 <img src="projects.png" class="icon">
 <h1>Projects</h1>
 <ul>
-    <li><a href="https://blueberrytech123.github.io/pbgs">Punch Bad Guys Simulator</a></li>
+    <li><a href="https://blueberrytech123.github.io/pbgs">Punch Bad Guys Simulator</a><br>Game about punching enemies; Leland Hacks 2022 best design winner</li>
     <li><a href="https://timewinder.github.io/">Timewinder Website</a></li>
     <li><a href="https://jambox.onrender.com">JamBox beta</a><br>Listen to radios from around the world! Currently in beta.</li>
+    <li><a href="https://bailm.onrender.com">BAiLM</a><br>An AI Language Model trained from random conversations. Viewer discretion advised</li>
 </ul>
 `;
 
