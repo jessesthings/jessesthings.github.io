@@ -29,14 +29,13 @@ body {
     color: #444;
 }
 .dark {
-    backdrop-filter: contrast(20%) brightness(30%);
     color: #fff;
 }
 .light #background-filter {
     backdrop-filter: contrast(40%) brightness(285%);
 }
 .dark #background-filter {
-    backdrop-filter: contrast(70%) brightness(30%);
+    backdrop-filter: contrast(40%) brightness(30%);
 }
 
 @keyframes a-hover {
@@ -108,14 +107,14 @@ input {
     width: 500vw;
     height: 500vh;
     margin: -50%;
-    position: fixed;
+    position: fixed !important;
     background: transparent;
     z-index: -1;
 }
 #container {
     margin: 25px;
     padding: 69px;
-    position: fixed;
+    position: fixed !important;
     box-sizing: border-box;
     width: calc(100% - 69px);
     height: calc(100% - 69px);
